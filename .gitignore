@@ -1,0 +1,26 @@
+# Node modules
+node_modules/
+
+# TaskMaster files (these should be in your project, not in this repo)
+.taskmaster/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Test files
+test/
+*.test.js
+
+# Temporary files
+tmp/
+temp/

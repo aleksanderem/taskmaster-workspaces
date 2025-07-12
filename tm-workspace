@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# TaskMaster Workspace Manager Launcher
+# This script provides an easy way to run TaskMaster workspace commands
+
+NODE_PATH=$(which node)
+
+if [ -z "$NODE_PATH" ]; then
+    echo "❌ Node.js is not installed. Please install Node.js first."
+    exit 1
+fi
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [ "$1" == "menu" ] || [ -z "$1" ]; then
+    # Launch interactive menu
+    "$NODE_PATH" "$SCRIPT_DIR/taskmaster-workspace.cjs"
+else
+    # Pass all arguments to tmw.cjs
+    "$NODE_PATH" "$SCRIPT_DIR/tmw.cjs" "$@"
+fi

@@ -1,0 +1,32 @@
+{
+  "name": "taskmaster-workspaces",
+  "version": "1.0.0",
+  "description": "Workspace management system for Claude Task Master",
+  "main": "taskmaster-workspace.cjs",
+  "scripts": {
+    "start": "node taskmaster-workspace.cjs",
+    "cli": "node tmw.cjs"
+  },
+  "keywords": [
+    "taskmaster",
+    "workspace",
+    "task-management",
+    "mcp",
+    "ai-tools"
+  ],
+  "author": "Alex M.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aleksanderem/taskmaster-workspaces.git"
+  },
+  "homepage": "https://github.com/aleksanderem/taskmaster-workspaces#readme",
+  "bugs": {
+    "url": "https://github.com/aleksanderem/taskmaster-workspaces/issues"
+  }
+}
